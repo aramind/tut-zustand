@@ -1,3 +1,4 @@
+import Cart from "./components/Cart";
 import { ChangeQtyButtons } from "./components/ChangeQtyButtons";
 import { Button } from "./components/ui/button";
 import {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <main className="space-y-2 dark h-screen bg-background max-w-sm mx-auto mt-2">
+      <Cart />
       <h1 className="text-2xl text-white">Products:</h1>
       {PRODUCTS_DATA.map((p) => (
         <Card key={p.id}>
